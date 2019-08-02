@@ -1,5 +1,5 @@
 $addonpath = "C:\temp\Addonupdater\addons"
-$addonupdaterpath = "C:\Temp\Addonupdater"
+$addonupdaterpath = "$userpath\Addonupdater"
 
 
 
