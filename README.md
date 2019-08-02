@@ -1,1 +1,35 @@
-# addman
+<#
+Addman
+
+Name
+    addman - World of Warcraft addons manager
+
+Synopsis
+    addon [option]
+
+Description
+    Install and update addons from Curseforge
+    Options
+    -update
+        update all addons listed in $home\addman\addonlist.txt
+
+    -add [addon name]
+        install an addon to your pre-set WoW addons directory
+
+    -remove [addon name]
+        Remove an addon from the addonlist
+
+    -list
+        List all addons listed in addonlist
+
+    -cleanup
+        Delete all addons inside your addons folder ($addonpath)
+
+    -h
+        Print this man page
+
+
+Author
+    hemski@hemko.xyz
+    
+#>
