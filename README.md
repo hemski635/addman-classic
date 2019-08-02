@@ -1,11 +1,5 @@
-<#
-Addman
+addman - World of Warcraft addons manager
 
-Name
-    addman - World of Warcraft addons manager
-
-Synopsis
-    addon [option]
 
 Description
     Install and update addons from Curseforge
@@ -31,5 +25,3 @@ Description
 
 Author
     hemski@hemko.xyz
-    
-#>
