@@ -2,7 +2,7 @@ addman - World of Warcraft addons manager
 
 
 Description
-    Install and update addons from Curseforge.com and tukui.org
+    Install and update addons from curseforge.com and tukui.org
 
     
     Options
