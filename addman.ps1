@@ -1,5 +1,5 @@
 $addonpath = "C:\temp\Addonupdater\addons"
-$addonupdaterpath = "$userpath\Addonupdater"
+$addonupdaterpath = "$home\Addonupdater" #Change to $userpath for Win10 1903
 
 
 
@@ -68,7 +68,7 @@ if($update){
                 Invoke-WebRequest -Uri $elvurl -OutFile $elvoutput
                 Expand-Archive -Path $elvoutput -DestinationPath $addonpath\ -Force
                 Remove-Item $elvoutput
-                Add-Content .\old.txt $url
+                Add-Content .\old.txt $elvurl
                 Write-Host "$addon updated"
                 }
             }
@@ -147,7 +147,7 @@ if($remove)
 '
     Add-Content .\old.txt '
 '
-    write-host "$remove has been removed from the addons list."
+    write-host "$remove has been removed from the addons list. To completely remove the addon, run 'addman -cleanup' and 'addman -update'"
     }
 
 #list all addons
@@ -184,7 +184,7 @@ Description
     Install and update addons from Curseforge
     Options
     -update
-        update all addons listed in .\addonupdater\addonlist.txt
+        update all addons listed in $home\addman\addonlist.txt
 
     -add [addon name]
         install an addon to your pre-set WoW addons directory
