@@ -5,9 +5,10 @@ Description
     Install and update addons from curseforge.com and tukui.org
     
     Copy the addman -directory to $home (c:\users\username)
-    Remember to edit addon path in addman/addman.ps1, if it's not "C:\Program Files (x86)\World of Warcraft\_retail\Interface\addons"
-    Previously installed addons are not included. You can manually add them to addman\addonlist.txt, or run 'addman -cleanup' and 
-    reinstall them.
+    Remember to edit addon path in addman/addman.ps1, if it's not 
+    "C:\Program Files (x86)\World of Warcraft\_retail\Interface\addons"
+    Previously installed addons are not included. You can manually add them 
+    to addman\addonlist.txt, or run 'addman -cleanup' and reinstall them.
 
     
     Options
