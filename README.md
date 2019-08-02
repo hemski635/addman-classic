@@ -3,6 +3,8 @@ addman - World of Warcraft addons manager
 
 Description
     Install and update addons from curseforge.com and tukui.org
+    
+    Remember to edit addon path in addman/addman.ps1 !
 
     
     Options
