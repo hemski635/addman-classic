@@ -3,6 +3,7 @@ addman - World of Warcraft addons manager
 
 Description
     Install and update addons from Curseforge
+    
     Options
     -update
         update all addons listed in $home\addman\addonlist.txt
