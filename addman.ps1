@@ -23,7 +23,7 @@ if ($test -eq $false)
 '
     }
 
-function addon{
+function addman{
 Param(
     [parameter(mandatory=$false)]
     [Switch]
@@ -113,7 +113,7 @@ if($add)
             Add-Content .\old.txt $elvurl
             Add-Content .\addonlist.txt $add
             Write-Host "$add installed"
-            }        
+            }
         }
     else
         {
@@ -161,21 +161,21 @@ if($cleanup)
     {
     Write-host "WARNING! This option will delete everything inside your addons directory"
     $reply = Read-Host -Prompt "Continue?[y/n]"
-    if ( $reply -match "[yY]" ) 
-        { 
+    if ( $reply -match "[yY]" )
+        {
         Remove-Item -Recurse -Force $addonpath\*
         Write-Host "Addons directory cleaned"
-        } 
+        }
     }
 
 
 
 
 $documentation = ("
-Addonupdater
+Addman
 
 Name
-    addon - World of Warcraft addons updater and installer
+    addman - World of Warcraft addons manager
 
 Synopsis
     addon [option]
