@@ -12,15 +12,13 @@ $test = test-path .\addonlist.txt
 if ($test -eq $false)
     {
     New-Item -ItemType file -Name addonlist.txt
-    Add-Content .\addonlist.txt '
-'
+    Add-Content .\addonlist.txt 'addonlist'
     }
 $test = test-path .\old.txt
 if ($test -eq $false)
     {
     New-Item -ItemType file -Name old.txt
-    Add-Content .\old.txt '
-'
+    Add-Content .\old.txt 'old'
     }
 
 function addman{
@@ -72,7 +70,7 @@ if($update){
                 Write-Host "$addon updated"
                 }
             }
-        else
+        if(($addon -ne 'addonlist') -and (($addon -notlike 'elvui') -or ($addon -notlike 'tukui')))
             {
             $href = ((invoke-webrequest "https://www.curseforge.com/wow/addons/$addon/download").links | Where-Object {$_.href -like "*file*"}).href
             $url = "https://www.curseforge.com$href"
