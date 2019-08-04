@@ -1,4 +1,4 @@
-$addonpath = "C:\Program Files (x86)\World of Warcraft\_retail\Interface\addons"
+$addonpath = "C:\Program Files (x86)\World of Warcraft\_retail_\Interface\addons"
 $addonupdaterpath = "$home\Addman" #Change to $userpath for Win10 1903
 
 
