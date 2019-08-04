@@ -81,7 +81,7 @@ function addman
                     Write-Host "$addon updated"
                     }
                 }
-            if(($addon -ne 'addonlist') -and (($addon -notlike 'elvui') -or ($addon -notlike 'tukui')))
+            if(($addon -ne 'addonlist') -and (($addon -notlike 'elvui') -and ($addon -notlike 'tukui')))
                 {
                 $href = ((invoke-webrequest "https://www.curseforge.com/wow/addons/$addon/download").links | Where-Object {$_.href -like "*file*"}).href
                 $url = "https://www.curseforge.com$href"
