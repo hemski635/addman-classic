@@ -141,10 +141,8 @@ if($remove)
     {
     get-content .\addonlist.txt | select-string -pattern $remove -notmatch | out-file .\addonlist.txt
     get-content .\old.txt | select-string -pattern $remove -notmatch | out-file .\old.txt
-    Add-Content .\addonlist.txt '
-'
-    Add-Content .\old.txt '
-'
+    Add-Content .\addonlist.txt 'old'
+    Add-Content .\old.txt 'old'
     write-host "$remove has been removed from the addons list. To completely remove the addon, run 'addman -cleanup' and 'addman -update'"
     }
 
