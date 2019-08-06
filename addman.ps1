@@ -1,6 +1,4 @@
-$addonpath = "C:/world-of-warcraft/drive_c/Program Files (x86)/World of Warcraft/_retail_/Interface/addons"
-$addonupdaterpath = "$home/addman"
-
+#!/bin/pwsh
 
 Write-Host ('
   ___  ______ ______ ___  ___  ___   _   _ 
@@ -11,6 +9,9 @@ Write-Host ('
 \_| |_/|___/  |___/  \_|  |_/\_| |_/\_| \_/
 Simple addons manager for World of Warcraft
 ')
+
+$addonpath = "C:/world-of-warcraft/drive_c/Program Files (x86)/World of Warcraft/_retail_/Interface/addons"
+$addonupdaterpath = "$home/addman/
 
 
 $ErrorActionPreference = 'stop'
