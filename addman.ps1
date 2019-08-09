@@ -10,7 +10,7 @@ Write-Host ('
 Simple addons manager for World of Warcraft
 ')
 
-$addonpath = "C:/world-of-warcraft/drive_c/Program Files (x86)/World of Warcraft/_retail_/Interface/addons"
+$addonpath = "C:/Program Files (x86)/World of Warcraft/_retail_/Interface/addons"
 $addonupdaterpath = "$home/addman/
 
 
