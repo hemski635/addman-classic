@@ -10,6 +10,7 @@ Install and update addons from curseforge.com and tukui.org
     to addman\addonlist.txt, or reinstall them with 'addman -add <addon>'
     (Example: addman -add deadly-boss-mods)
 
+Tested on Win10 1903 and ArchLinux (with PowerShell Core 6.1)
     
     Options
     addman [options]
